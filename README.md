@@ -2,9 +2,9 @@
 
 This is a simple HTML/CSS project featuring a responsive sidebar navigation menu with toggle functionality, designed with modern fonts, icons, and hover effects. The project is styled using custom CSS and uses [Font Awesome](https://fontawesome.com/) icons and [Google Fonts](https://fonts.google.com/specimen/Poppins) for improved aesthetics.
 
-## 🖼️ Preview
-
-![Sidebar Menu Screenshot](screenshot.png) <!-- You can replace this with your actual screenshot image name -->
+## Screenshots
+<img width="1920" height="1020" alt="{101EDE0A-9F8C-4FED-823C-E9BDF8A80A95}" src="https://github.com/user-attachments/assets/37bb948b-a6d9-4e4a-96f3-096240677e57" />
+<img width="1920" height="1020" alt="{F4E07D4C-C994-4751-AFE5-719B02895EB4}" src="https://github.com/user-attachments/assets/cda73fcc-f9d9-47c3-ac42-dbe8ea183535" />
 
 ## 📁 Project Structure
 
@@ -48,10 +48,6 @@ project-folder/
 
 - [Font Awesome Icons](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
-
-## Screenshots
-<img width="1920" height="1020" alt="{101EDE0A-9F8C-4FED-823C-E9BDF8A80A95}" src="https://github.com/user-attachments/assets/37bb948b-a6d9-4e4a-96f3-096240677e57" />
-<img width="1920" height="1020" alt="{F4E07D4C-C994-4751-AFE5-719B02895EB4}" src="https://github.com/user-attachments/assets/cda73fcc-f9d9-47c3-ac42-dbe8ea183535" />
 
 ## 🧑‍💻 Author
 
