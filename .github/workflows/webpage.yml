@@ -1,0 +1,32 @@
+name: web page pipeline
+
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest 
+    steps:
+    # 1. गिटहब से आपका कोड इस कंप्यूटर पर कॉपी करा
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # 2. उस कंप्यूटर पर .NET 8 या जो भी आपका वर्जन है इंस्टॉल करना
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x' # अपनी .NET का वर्जन यहां लिखें (e.g., 6.0, 7.0, 8.0)
+
+    # 3. सारे NuGet पैकेजेस रीस्टोर करना (जैसे हम VS में करते हैं)
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    # 4. आपके पूरे C# कोड को बिल्ड/कंपाइल करना (जैसे Ctrl+Shift+B)
+    - name: Build Project
+      run: dotnet build --no-restore --configuration Release
+
+    # 5. आपके प्रोजेक्ट के यूनिट टेस्ट केसेस रन करना
+    - name: Run Tests
+      run: dotnet test --no-build --verbosity normal
